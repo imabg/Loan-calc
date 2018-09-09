@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Loan Calculator</title>
+
+    <style >
+      #results , #loading{
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">Rs.</div>
+                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">%</div>
+                    <input type="number" class="form-control" id="interest" placeholder="Interest Amount">
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" id="time" placeholder="Time to Repay">
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-dark btn-block">
+                  </div>
+
+            </form>
+            <!-- Loader -->
+            <div id="loading">
+              <img src="img/img.gif" >
+            </div>
+            <!-- Output -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">Monthly To Pay</div>
+                  <input type="number" class="form-control" id="monthly-payment" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">Total payment</div>
+                  <input type="number" class="form-control" id="total-payment" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-addon">Total Interset</div>
+                  <input type="number" class="form-control" id="total-interset" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="pt-4">
+        <div class="footer-copyright">
+                <div class="container ">
+                © 2018 <span class="grey-text text-darken-4 "><a href="https://github.com/abhay676">abhay676<i class="fa fa-github "></i></a></span>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
