@@ -33,7 +33,10 @@ function calculateResults () {
           totalPayment.value = (MontlhyPay * timeValue).toFixed(2);
           totalInterset.value = ((MontlhyPay * timeValue) - principleValue).toFixed(2);
           document.querySelector('#results').style.display = 'block';
-          document.querySelector('#loading').style.display = 'none';
+          document.querySelector('#loading').style.display = 'none'; 
+        principle.value = '';
+        totalPayment.value = '';
+        totalInterset.value = '';
       } else {
         document.querySelector('#loading').style.display = 'none';
         showError('please check your number');
